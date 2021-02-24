@@ -24,6 +24,13 @@ function DishForm({
     }));
   }
 
+  function priceChangeHandler({ target: { name, value } }) {
+    setDish((previousDish) => ({
+      ...previousDish,
+      [name]: parseInt(value, 10),
+    }));
+  }
+
   function submitHandler(event) {
     event.preventDefault();
     event.stopPropagation();
@@ -87,7 +94,7 @@ function DishForm({
                 aria-label="Price (to the nearest dollar)"
                 required={true}
                 value={dish.price}
-                onChange={changeHandler}
+                onChange={priceChangeHandler}
               />
               <div className="input-group-append">
                 <span className="input-group-text">.00</span>
