@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
-import {deleteOrder, readOrder, updateOrder} from "../utils/api";
+import { deleteOrder, readOrder, updateOrder } from "../utils/api";
 import OrderForm from "./OrderForm";
 import ErrorAlert from "../layout/ErrorAlert";
 
