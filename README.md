@@ -1,12 +1,12 @@
-# GrubDash Front End Application
+### GrubDash Application
 
-## Installation
+Contains `client` frontend and `server` backend for a full stack web application.
 
-1. Fork / clone this repository.
-1. Run `npm install`.
+#### Installation & Running
 
-Use `npm start` to run the application.
+1. In one terminal session, from the project root `cd client` and run start script: `npm start`.
+2. In a second terminal session, from the project root `cd server` and run start script: `npm run start`.
 
-Set the `API_BASE_URL` environment variable to the base url for the API.
+#### Further Information
 
-If `API_BASE_URL` is not set, a default value of `http://localhost:5000` is used.
+See each [client/README.md](./client/README.md) and [server/README.md](./server/README.md) for more information.
