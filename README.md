@@ -1,12 +1,57 @@
-# GrubDash Front End Application
+# GrubDash Front-End
 
+GrubDash is a fictional food delivery platform that allows users to order food online. This project serves as the front-end component for the GrubDash application.
+
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Running the App](#running-the-app)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+- **Food Ordering**: Users can browse food items, add them to the cart, and place orders.
+- **Responsive Design**: Works seamlessly across devices (desktop, tablet, mobile).
+- **API Integration**: Uses a RESTful API to manage and retrieve data.
+  
 ## Installation
 
-1. Fork / clone this repository.
-1. Run `npm install`.
+To set up the project locally, follow these steps:
 
-Use `npm start` to run the application.
+1. **Fork/Clone the Repository**  
+   ```
+   git clone https://github.com/Thinkful-Ed/starter-grub-dash-front-end.git
+   ```
 
-Set the `API_BASE_URL` environment variable to the base url for the API.
+2. **Install Dependencies**  
+   Navigate to the project directory and run:
+   ```
+   npm install
+   ```
 
-If `API_BASE_URL` is not set, a default value of `http://localhost:5000` is used.
+## Configuration
+
+The application expects an environment variable for the API base URL:
+- `API_BASE_URL`: Set this to the URL of your back-end server. If not set, the app defaults to `http://localhost:5000`.
+
+You can create a `.env` file to set the variable locally:
+```
+API_BASE_URL=http://your-api-url-here
+```
+
+## Running the App
+
+To start the app in development mode, use:
+```
+npm start
+```
+This will run the app on [http://localhost:3000](http://localhost:3000).
+
+## Project Structure
+
+- **`/public`**: Static files like HTML and images.
+- **`/src`**: Source code, including React components, styles, and utility files.
+- **`/src/components`**: Contains reusable UI components.
+- **`/src/utils`**: Helper functions and utilities.
